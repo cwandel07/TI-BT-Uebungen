@@ -17,7 +17,7 @@ halt:
     cli                 ; disable interrupts
     hlt                 ; stop execution
 
-msg db 'welcome', 13, 10, 0
+msg db 'Welcome Carsten', 13, 10, 0
 
     times 510-($-$$) db 0
     db 0x55             ; write boot sector signature at
